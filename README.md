@@ -12,4 +12,4 @@ Sample code for the 'Exploring Microservices' talk.
 - Browse to http://localhost:8080/ to launch the UI
 
 ##Architecture
-![Contoso Pizza Architecture](https://30store.blob.core.windows.net:443/public/ContosoPizza.png "Contoso Pizza Architecture")
+![Contoso Pizza Architecture](https://30store.blob.core.windows.net:443/public/ContosoPizza1.png "Contoso Pizza Architecture")
