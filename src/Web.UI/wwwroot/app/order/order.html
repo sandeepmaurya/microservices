@@ -1,0 +1,114 @@
+﻿<div ng-controller="orderctrl">
+    <div class="row">
+        <h2>Review your order</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-5 panel panel-default">
+                    <div class="panel-heading">Customer details</div>
+                    <div class="panel-body">
+                        <input type="text" ng-model="order.Customer.FirstName" placeholder="First name" class="form-control" required><br>
+                        <input type="text" ng-model="order.Customer.LastName" placeholder="Last name" class="form-control" required><br>
+                        <input type="text" ng-model="order.Customer.Email" placeholder="Email" class="form-control" required><br>
+                        <input type="text" ng-model="order.Customer.Mobile" placeholder="Mobile number" class="form-control" required><br>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1 panel panel-default">
+                    <div class="panel-heading">Delivery address</div>
+                    <div class="panel-body">
+                        <input type="text" ng-model="order.Address.AddressLine1" placeholder="Address line 1" class="form-control" required><br>
+                        <input type="text" ng-model="order.Address.AddressLine2" placeholder="Address line 2" class="form-control" required><br>
+                        <input type="text" ng-model="order.Address.City" ng-readonly="true" class="form-control"><br>
+                        <input type="text" ng-model="order.Address.State" ng-readonly="true" class="form-control"><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row panel panel-default">
+                <div class="panel-heading">Items</div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>Item</td>
+                                <td>Quantity</td>
+                                <td>Amount</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in order.Items">
+                                <td> <img ng-src="{{item.ImageUri}}" width="50" height="50" /> </td>
+                                <td>{{item.Name}}</td>
+                                <td>{{item.Quantity}}</td>
+                                <td>{{item.Amount}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+            <div class="row panel panel-default">
+                <div class="panel-heading">Order Summary</div>
+                <div class="panel-body">
+
+                    <table class="table table-striped">
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gross Amount:</td>
+                                <td class="pull-right">{{order.GrossAmount}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-striped">
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Discount:</td>
+                                <td class="pull-right">{{order.Discount}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-striped">
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="taxLine in order.TaxLines">
+                                <td>{{taxLine.Name}}</td>
+                                <td class="pull-right">{{taxLine.Amount}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-striped">
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <tr class="h4">
+                                <td>Total:</td>
+                                <td class="pull-right">{{order.TotalAmount}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button ng-click="pay()" ng-disabled="paymentDisabled()" class="btn btn-info pull-right">
+                        Proceed to payment
+                    </button>
+                </div>
+            </div>
+            <div class="row form-inline pull-right">
+                <input type="text" ng-model="couponCode" placeholder="Got a coupon?" class="form-control" />
+                <button ng-click="applyCoupon()" class="btn btn-info">
+                    Apply
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container body-content">
+        <div class="panel panel-default">
+            <div class="panel-heading">Your payment is being processed...</div>
+            <div class="panel-body">
+                <ul class="list-unstyled">
+                    <li>This gateway is secured using 128 bit SSL encryption.</li>
+                    <li>Please DO NOT hit back or refresh buttons while the payment is in progress.</li>
+                    <li>The payment may take upto 5 minutes to complete.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <form name="redirect" method="post" action="@ViewData["cb"]"></form>
+    <script>
+        setTimeout(function () {
+            document.redirect.submit();
+        }, 2000);
+    </script>
+
+</body>
+</html>

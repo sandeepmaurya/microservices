@@ -1,0 +1,115 @@
+﻿@{
+    Layout = "";
+    ViewData["Title"] = "Home Page";
+}
+@model Newtonsoft.Json.Linq.JObject
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoso Pizza</title>
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"></script>
+</head>
+<body class="container body-content">
+    <header class="bg-primary">
+        <a href="/">
+            <img src="~/images/logo.gif" width="200" height="100" />
+        </a>
+    </header>
+
+    <main>
+        <h3>Thank you. Your order id is <i>@Model["Id"].ToString()</i>.</h3>
+        <div class="panel panel-default">
+            <div class="panel-heading">Delivery Address</div>
+            <div class="panel-body">
+                <p>@Model["Address"]["AddressLine1"].ToString() </p>
+                <p>@Model["Address"]["AddressLine2"].ToString()</p>
+                <p>@Model["Address"]["City"].ToString()</p>
+                <p>@Model["Address"]["State"].ToString()</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Store Address</div>
+            <div class="panel-body">
+                <p>@Model["Store"]["AddressLine1"].ToString() </p>
+                <p>@Model["Store"]["AddressLine2"].ToString()</p>
+                <p>@Model["Store"]["City"].ToString()</p>
+                <p>@Model["Store"]["State"].ToString()</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Order Summary</div>
+            <div class="panel-body">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>Item</td>
+                            <td>Quantity</td>
+                            <td class="pull-right">Amount</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model["Items"])
+                        {
+                            <tr>
+                                <td>@item["Name"].ToString()</td>
+                                <td>@item["Quantity"].ToString()</td>
+                                <td class="pull-right">@item["Amount"].ToString()</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <table class="table table-striped">
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Discount:</td>
+                            <td class="pull-right">@Model["Discount"].ToString()</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-striped">
+                    <thead>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model["TaxLines"])
+                        {
+                            <tr>
+                                <td>@item["Name"].ToString()</td>
+                                <td class="pull-right">@item["Amount"].ToString()</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <table class="table table-striped">
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr class="h4">
+                            <td>Total:</td>
+                            <td class="pull-right">@Model["TotalAmount"].ToString()</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </main>
+    <hr />
+    <footer>
+        <p>&copy; 2016 - Contoso Pizza Ltd.</p>
+    </footer>
+
+</body>
+</html>

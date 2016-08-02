@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/ContosoPizzaApp" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="AdminApi_InstanceCount" Value="1" />
+    <Parameter Name="GatewayApi_InstanceCount" Value="1" />
+    <Parameter Name="OrderService_InstanceCount" Value="1" />
+    <Parameter Name="UI_InstanceCount" Value="1" />
+    <Parameter Name="ProductService_InstanceCount" Value="1" />
+    <Parameter Name="ProductService_StorageConnectionString" Value="DefaultEndpointsProtocol=https;AccountName=30store;AccountKey=uk5/Nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxt+Epg==;" />
+    <Parameter Name="StoreService_MinReplicaSetSize" Value="3" />
+    <Parameter Name="StoreService_PartitionCount" Value="10" />
+    <Parameter Name="StoreService_TargetReplicaSetSize" Value="3" />
+    <Parameter Name="OrderService_DocDbEndpointUri" Value="https://smdocdb.documents.azure.com:443/" />
+    <Parameter Name="OrderService_DocDbPrimaryKey" Value="w541xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxwuhbg==" />
+    <Parameter Name="OrderService_DocDbDatabaseName" Value="orderdb" />
+    <Parameter Name="OrderService_DocDbCollectionName" Value="main" />
+    <Parameter Name="Gateway_CorsOrigins" Value="http://localhost:8080" />
+  </Parameters>
+</Application>

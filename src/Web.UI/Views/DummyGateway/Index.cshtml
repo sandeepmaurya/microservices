@@ -1,0 +1,74 @@
+﻿@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <h2>Make Payment</h2>
+        <div class="panel h4">
+            Total Amount:@ViewData["amt"]
+        </div>
+        <div class="panel">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#creditCard">Credit Card</a></li>
+                <li><a data-toggle="tab" href="#debitCard">Debit Card</a></li>
+                <li><a data-toggle="tab" href="#netBanking">Net Banking</a></li>
+                <li><a data-toggle="tab" href="#cod">Cash on Delivery</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="creditCard" class="tab-pane fade in active">
+                    <div class="panel panel-default">
+                        <input type="text" placeholder="Name on card" class="form-control" required><br>
+                        <input type="text" placeholder="Card number" class="form-control" required><br>
+                        <input type="text" placeholder="Expiration date (mm/yyyy)" class="form-control" required><br>
+                        <input type="text" placeholder="Cvv" class="form-control" required><br>
+                    </div>
+                    @{
+                        string cb = ViewData["cb"] + "&bn=ICICI&tid=45324";
+                        string gatewayUrl = "/dummygateway/makepayment?cb=" + System.Web.HttpUtility.UrlEncode(cb);
+                    }
+                    <a href='@gatewayUrl' class="btn btn-info">Make Payment</a>
+                </div>
+                <div id="debitCard" class="tab-pane fade">
+                    <div class="panel panel-default">
+                        <input type="text" placeholder="Name on card" class="form-control" required><br>
+                        <input type="text" placeholder="Card number" class="form-control" required><br>
+                        <input type="text" placeholder="Expiration date (mm/yyyy)" class="form-control" required><br>
+                        <input type="text" placeholder="Cvv" class="form-control" required><br>
+                    </div>
+                    <a href='@gatewayUrl' class="btn btn-info">Make Payment</a>
+                </div>
+                <div id="netBanking" class="tab-pane fade">
+                    <div class="panel panel-default">
+                        <label for="banks">Choose a bank:</label>
+                        <select class="form-control" id="banks">
+                            <option>ICICI Bank</option>
+                            <option>State Bank of India</option>
+                            <option>HDFC Bank</option>
+                            <option>Axis Bank</option>
+                        </select>
+                    </div>
+                    <a href='@gatewayUrl' class="btn btn-info">Make Payment</a>
+                </div>
+                <div id="cod" class="tab-pane fade">
+                    @{
+                        cb = ViewData["cb"] + "&bn=cod&tid=45324";
+                        gatewayUrl = "/dummygateway/makepayment?cb=" + System.Web.HttpUtility.UrlEncode(cb);
+                    }
+                    <a href='@gatewayUrl' class="btn btn-info">Confirm</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

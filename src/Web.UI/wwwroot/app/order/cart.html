@@ -1,0 +1,65 @@
+﻿<div ng-controller="cartctrl">
+    <div class="panel panel-default">
+        <div class="panel-heading h3">Cart ({{totalItems}})</div>
+        <div class="panel-body">
+            <div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>Item</td>
+                            <td>Quantity</td>
+                            <td>Amount</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in order.Items">
+                            <td> <img ng-src="{{item.ImageUri}}" width="50" height="50" /> </td>
+                            <td>{{item.Name}}</td>
+                            <td>{{item.Quantity}}</td>
+                            <td>{{item.Amount}}</td>
+                            <td>
+                                <button ng-click="removeItem(item)" class="glyphicon glyphicon-trash btn btn-info pull-right">
+                                    Remove
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-striped">
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="taxLine in order.TaxLines">
+                            <td>{{taxLine.Name}}</td>
+                            <td class="pull-right">{{taxLine.Amount}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-striped">
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr class="h4">
+                            <td>Estimated Total:</td>
+                            <td class="pull-right">{{order.TotalAmount}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="pull-right">
+        <button ng-click="continueShopping()" class="btn btn-default">
+            Continue Shopping
+        </button>
+        <button ng-click="checkout()" class="btn btn-info">
+            Checkout
+        </button>
+    </div>
+
+</div>

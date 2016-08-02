@@ -1,0 +1,26 @@
+﻿<div>
+    <h1>Menu</h1>
+    <div ng-controller="cartctrl" class="panel panel-default">
+        <div class="panel-body">
+            Total ({{totalItems}} items): {{order.TotalAmount}}
+            <div class="pull-right">
+                <button ng-click="viewCart()" class="btn btn-default">View Cart</button>
+                <button ng-click="checkout()" class="btn btn-info">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div ng-controller="productctrl">
+        <table class="table table-hover">
+            <tr ng-repeat="product in menu">
+                <td> <img ng-src="{{product.ImgUri}}" width="100" height="100" /> </td>
+                <td>{{product.Name}}</td>
+                <td>{{product.Price}}</td>
+                <td>
+                    <button ng-click="addToCart(product)" class="btn btn-info pull-right">
+                        Add to Cart
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

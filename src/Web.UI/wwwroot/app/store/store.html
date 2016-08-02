@@ -1,0 +1,21 @@
+﻿<div ng-controller="storectrl">
+    <h2>Select Store</h2>
+    <div>
+        <div>
+            City:
+            <select class="form-control" ng-model="selectedCity" ng-options="city.Name for city in cities">
+                <option value=''>Select City</option>
+            </select>
+        </div>
+
+        <div>
+            Store:
+            <select class="form-control" id="locality" ng-model="selectedLocality" ng-options="locality.Name for locality in localities">
+                <option value=''>Select</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <button ng-click="buildOrder()">Build Order</button>
+    </div>
+</div>

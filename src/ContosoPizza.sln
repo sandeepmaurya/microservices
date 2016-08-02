@@ -1,0 +1,281 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Store", "Store", "{1CB541F2-9938-4C8C-AF42-2CEE30369678}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{E6F72199-EB70-4D46-8DA9-FC7D998DE26D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{D1FC7F04-D56C-4AEB-9DAF-C0591E130E92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Contracts", "Product.Contracts\Product.Contracts.csproj", "{228E522D-F752-4EAE-980A-3E6A485DB097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Tests", "Order.Tests\Order.Tests.csproj", "{5C52FE12-096D-434A-A3A2-8CBE62C16110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Tests", "Product.Tests\Product.Tests.csproj", "{F108A932-D140-4A38-95D9-667F5330D81C}"
+EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ContosoPizzaApp", "ContosoPizzaApp\ContosoPizzaApp.sfproj", "{43AE568E-8CEC-441B-9A96-E505F5822970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Service", "Product.Service\Product.Service.csproj", "{62B424D0-C8B0-413E-B852-FFD14E002DDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{FCB6411F-E12E-45DB-8375-BAEC94BA6C5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{40F2FA75-2865-4CEF-B188-68D26B28727F}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Web.UI", "Web.UI\Web.UI.xproj", "{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Domain", "Order.Domain\Order.Domain.csproj", "{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Infrastructure", "Order.Infrastructure\Order.Infrastructure.csproj", "{4CD91116-351C-44E5-BB7C-B78258D0265D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Service", "Order.Service\Order.Service.csproj", "{037DD290-B32E-401F-9394-35B949ABCCE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Service.Contracts", "Order.Service.Contracts\Order.Service.Contracts.csproj", "{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayApi", "GatewayApi\GatewayApi.csproj", "{9AB24FFD-B7F0-47C1-B592-4652CFBE607A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Contracts", "Store.Contracts\Store.Contracts.csproj", "{91EDE51B-BCAD-4556-A005-EF278E503B18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreService", "StoreService\StoreService.csproj", "{BBD777A8-3BB7-46B9-A09C-9F285EF08853}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{33A4F066-A601-4E7A-92DF-F1531B17BF83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Configuration.ServiceFabric", "Common.Configuration.ServiceFabric\Common.Configuration.ServiceFabric.csproj", "{CBC7DA78-78AE-48B0-8726-A1D7C50C0634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{ADD50321-12D7-4CDB-958D-37E060AE4BE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{4EE016E6-03E8-447E-A4CB-861410983618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin.Api", "Admin.Api\Admin.Api.csproj", "{3A15FC48-C86F-4A45-BCDD-FC5FC12253A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{228E522D-F752-4EAE-980A-3E6A485DB097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228E522D-F752-4EAE-980A-3E6A485DB097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228E522D-F752-4EAE-980A-3E6A485DB097}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{228E522D-F752-4EAE-980A-3E6A485DB097}.Debug|x64.Build.0 = Debug|Any CPU
+		{228E522D-F752-4EAE-980A-3E6A485DB097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228E522D-F752-4EAE-980A-3E6A485DB097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228E522D-F752-4EAE-980A-3E6A485DB097}.Release|x64.ActiveCfg = Release|Any CPU
+		{228E522D-F752-4EAE-980A-3E6A485DB097}.Release|x64.Build.0 = Release|Any CPU
+		{5C52FE12-096D-434A-A3A2-8CBE62C16110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C52FE12-096D-434A-A3A2-8CBE62C16110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C52FE12-096D-434A-A3A2-8CBE62C16110}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5C52FE12-096D-434A-A3A2-8CBE62C16110}.Debug|x64.Build.0 = Debug|Any CPU
+		{5C52FE12-096D-434A-A3A2-8CBE62C16110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C52FE12-096D-434A-A3A2-8CBE62C16110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C52FE12-096D-434A-A3A2-8CBE62C16110}.Release|x64.ActiveCfg = Release|Any CPU
+		{5C52FE12-096D-434A-A3A2-8CBE62C16110}.Release|x64.Build.0 = Release|Any CPU
+		{F108A932-D140-4A38-95D9-667F5330D81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F108A932-D140-4A38-95D9-667F5330D81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F108A932-D140-4A38-95D9-667F5330D81C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F108A932-D140-4A38-95D9-667F5330D81C}.Debug|x64.Build.0 = Debug|Any CPU
+		{F108A932-D140-4A38-95D9-667F5330D81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F108A932-D140-4A38-95D9-667F5330D81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F108A932-D140-4A38-95D9-667F5330D81C}.Release|x64.ActiveCfg = Release|Any CPU
+		{F108A932-D140-4A38-95D9-667F5330D81C}.Release|x64.Build.0 = Release|Any CPU
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Debug|Any CPU.Build.0 = Debug|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Debug|x64.ActiveCfg = Debug|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Debug|x64.Build.0 = Debug|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Debug|x64.Deploy.0 = Debug|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Release|Any CPU.ActiveCfg = Release|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Release|Any CPU.Build.0 = Release|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Release|Any CPU.Deploy.0 = Release|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Release|x64.ActiveCfg = Release|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Release|x64.Build.0 = Release|x64
+		{43AE568E-8CEC-441B-9A96-E505F5822970}.Release|x64.Deploy.0 = Release|x64
+		{62B424D0-C8B0-413E-B852-FFD14E002DDD}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{62B424D0-C8B0-413E-B852-FFD14E002DDD}.Debug|Any CPU.Build.0 = Debug|x64
+		{62B424D0-C8B0-413E-B852-FFD14E002DDD}.Debug|x64.ActiveCfg = Debug|x64
+		{62B424D0-C8B0-413E-B852-FFD14E002DDD}.Debug|x64.Build.0 = Debug|x64
+		{62B424D0-C8B0-413E-B852-FFD14E002DDD}.Release|Any CPU.ActiveCfg = Release|x64
+		{62B424D0-C8B0-413E-B852-FFD14E002DDD}.Release|Any CPU.Build.0 = Release|x64
+		{62B424D0-C8B0-413E-B852-FFD14E002DDD}.Release|x64.ActiveCfg = Release|x64
+		{62B424D0-C8B0-413E-B852-FFD14E002DDD}.Release|x64.Build.0 = Release|x64
+		{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1}.Debug|x64.Build.0 = Debug|Any CPU
+		{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1}.Release|x64.ActiveCfg = Release|Any CPU
+		{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1}.Release|x64.Build.0 = Release|Any CPU
+		{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED}.Debug|x64.Build.0 = Debug|Any CPU
+		{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED}.Release|x64.ActiveCfg = Release|Any CPU
+		{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED}.Release|x64.Build.0 = Release|Any CPU
+		{4CD91116-351C-44E5-BB7C-B78258D0265D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD91116-351C-44E5-BB7C-B78258D0265D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD91116-351C-44E5-BB7C-B78258D0265D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4CD91116-351C-44E5-BB7C-B78258D0265D}.Debug|x64.Build.0 = Debug|Any CPU
+		{4CD91116-351C-44E5-BB7C-B78258D0265D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD91116-351C-44E5-BB7C-B78258D0265D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD91116-351C-44E5-BB7C-B78258D0265D}.Release|x64.ActiveCfg = Release|Any CPU
+		{4CD91116-351C-44E5-BB7C-B78258D0265D}.Release|x64.Build.0 = Release|Any CPU
+		{037DD290-B32E-401F-9394-35B949ABCCE8}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{037DD290-B32E-401F-9394-35B949ABCCE8}.Debug|Any CPU.Build.0 = Debug|x64
+		{037DD290-B32E-401F-9394-35B949ABCCE8}.Debug|x64.ActiveCfg = Debug|x64
+		{037DD290-B32E-401F-9394-35B949ABCCE8}.Debug|x64.Build.0 = Debug|x64
+		{037DD290-B32E-401F-9394-35B949ABCCE8}.Release|Any CPU.ActiveCfg = Release|x64
+		{037DD290-B32E-401F-9394-35B949ABCCE8}.Release|Any CPU.Build.0 = Release|x64
+		{037DD290-B32E-401F-9394-35B949ABCCE8}.Release|x64.ActiveCfg = Release|x64
+		{037DD290-B32E-401F-9394-35B949ABCCE8}.Release|x64.Build.0 = Release|x64
+		{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01}.Debug|x64.Build.0 = Debug|Any CPU
+		{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01}.Release|x64.ActiveCfg = Release|Any CPU
+		{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01}.Release|x64.Build.0 = Release|Any CPU
+		{9AB24FFD-B7F0-47C1-B592-4652CFBE607A}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{9AB24FFD-B7F0-47C1-B592-4652CFBE607A}.Debug|Any CPU.Build.0 = Debug|x64
+		{9AB24FFD-B7F0-47C1-B592-4652CFBE607A}.Debug|x64.ActiveCfg = Debug|x64
+		{9AB24FFD-B7F0-47C1-B592-4652CFBE607A}.Debug|x64.Build.0 = Debug|x64
+		{9AB24FFD-B7F0-47C1-B592-4652CFBE607A}.Release|Any CPU.ActiveCfg = Release|x64
+		{9AB24FFD-B7F0-47C1-B592-4652CFBE607A}.Release|Any CPU.Build.0 = Release|x64
+		{9AB24FFD-B7F0-47C1-B592-4652CFBE607A}.Release|x64.ActiveCfg = Release|x64
+		{9AB24FFD-B7F0-47C1-B592-4652CFBE607A}.Release|x64.Build.0 = Release|x64
+		{91EDE51B-BCAD-4556-A005-EF278E503B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EDE51B-BCAD-4556-A005-EF278E503B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EDE51B-BCAD-4556-A005-EF278E503B18}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{91EDE51B-BCAD-4556-A005-EF278E503B18}.Debug|x64.Build.0 = Debug|Any CPU
+		{91EDE51B-BCAD-4556-A005-EF278E503B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EDE51B-BCAD-4556-A005-EF278E503B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91EDE51B-BCAD-4556-A005-EF278E503B18}.Release|x64.ActiveCfg = Release|Any CPU
+		{91EDE51B-BCAD-4556-A005-EF278E503B18}.Release|x64.Build.0 = Release|Any CPU
+		{BBD777A8-3BB7-46B9-A09C-9F285EF08853}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{BBD777A8-3BB7-46B9-A09C-9F285EF08853}.Debug|Any CPU.Build.0 = Debug|x64
+		{BBD777A8-3BB7-46B9-A09C-9F285EF08853}.Debug|x64.ActiveCfg = Debug|x64
+		{BBD777A8-3BB7-46B9-A09C-9F285EF08853}.Debug|x64.Build.0 = Debug|x64
+		{BBD777A8-3BB7-46B9-A09C-9F285EF08853}.Release|Any CPU.ActiveCfg = Release|x64
+		{BBD777A8-3BB7-46B9-A09C-9F285EF08853}.Release|Any CPU.Build.0 = Release|x64
+		{BBD777A8-3BB7-46B9-A09C-9F285EF08853}.Release|x64.ActiveCfg = Release|x64
+		{BBD777A8-3BB7-46B9-A09C-9F285EF08853}.Release|x64.Build.0 = Release|x64
+		{CBC7DA78-78AE-48B0-8726-A1D7C50C0634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC7DA78-78AE-48B0-8726-A1D7C50C0634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC7DA78-78AE-48B0-8726-A1D7C50C0634}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CBC7DA78-78AE-48B0-8726-A1D7C50C0634}.Debug|x64.Build.0 = Debug|Any CPU
+		{CBC7DA78-78AE-48B0-8726-A1D7C50C0634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC7DA78-78AE-48B0-8726-A1D7C50C0634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC7DA78-78AE-48B0-8726-A1D7C50C0634}.Release|x64.ActiveCfg = Release|Any CPU
+		{CBC7DA78-78AE-48B0-8726-A1D7C50C0634}.Release|x64.Build.0 = Release|Any CPU
+		{ADD50321-12D7-4CDB-958D-37E060AE4BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD50321-12D7-4CDB-958D-37E060AE4BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD50321-12D7-4CDB-958D-37E060AE4BE0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ADD50321-12D7-4CDB-958D-37E060AE4BE0}.Debug|x64.Build.0 = Debug|Any CPU
+		{ADD50321-12D7-4CDB-958D-37E060AE4BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD50321-12D7-4CDB-958D-37E060AE4BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD50321-12D7-4CDB-958D-37E060AE4BE0}.Release|x64.ActiveCfg = Release|Any CPU
+		{ADD50321-12D7-4CDB-958D-37E060AE4BE0}.Release|x64.Build.0 = Release|Any CPU
+		{3A15FC48-C86F-4A45-BCDD-FC5FC12253A3}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{3A15FC48-C86F-4A45-BCDD-FC5FC12253A3}.Debug|Any CPU.Build.0 = Debug|x64
+		{3A15FC48-C86F-4A45-BCDD-FC5FC12253A3}.Debug|x64.ActiveCfg = Debug|x64
+		{3A15FC48-C86F-4A45-BCDD-FC5FC12253A3}.Debug|x64.Build.0 = Debug|x64
+		{3A15FC48-C86F-4A45-BCDD-FC5FC12253A3}.Release|Any CPU.ActiveCfg = Release|x64
+		{3A15FC48-C86F-4A45-BCDD-FC5FC12253A3}.Release|x64.ActiveCfg = Release|x64
+		{3A15FC48-C86F-4A45-BCDD-FC5FC12253A3}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{228E522D-F752-4EAE-980A-3E6A485DB097} = {E6F72199-EB70-4D46-8DA9-FC7D998DE26D}
+		{5C52FE12-096D-434A-A3A2-8CBE62C16110} = {D1FC7F04-D56C-4AEB-9DAF-C0591E130E92}
+		{F108A932-D140-4A38-95D9-667F5330D81C} = {E6F72199-EB70-4D46-8DA9-FC7D998DE26D}
+		{62B424D0-C8B0-413E-B852-FFD14E002DDD} = {E6F72199-EB70-4D46-8DA9-FC7D998DE26D}
+		{1EAD5062-3C2B-4EB7-B1CD-21D6689ACDA1} = {FCB6411F-E12E-45DB-8375-BAEC94BA6C5D}
+		{4EE34321-AE87-4CF7-A977-13DE5C9EC2ED} = {D1FC7F04-D56C-4AEB-9DAF-C0591E130E92}
+		{4CD91116-351C-44E5-BB7C-B78258D0265D} = {D1FC7F04-D56C-4AEB-9DAF-C0591E130E92}
+		{037DD290-B32E-401F-9394-35B949ABCCE8} = {D1FC7F04-D56C-4AEB-9DAF-C0591E130E92}
+		{05EB1CDD-8C4B-442D-88EB-1682B5AB4A01} = {D1FC7F04-D56C-4AEB-9DAF-C0591E130E92}
+		{9AB24FFD-B7F0-47C1-B592-4652CFBE607A} = {40F2FA75-2865-4CEF-B188-68D26B28727F}
+		{91EDE51B-BCAD-4556-A005-EF278E503B18} = {1CB541F2-9938-4C8C-AF42-2CEE30369678}
+		{BBD777A8-3BB7-46B9-A09C-9F285EF08853} = {1CB541F2-9938-4C8C-AF42-2CEE30369678}
+		{CBC7DA78-78AE-48B0-8726-A1D7C50C0634} = {33A4F066-A601-4E7A-92DF-F1531B17BF83}
+		{ADD50321-12D7-4CDB-958D-37E060AE4BE0} = {33A4F066-A601-4E7A-92DF-F1531B17BF83}
+		{3A15FC48-C86F-4A45-BCDD-FC5FC12253A3} = {4EE016E6-03E8-447E-A4CB-861410983618}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 17
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://vsogd.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Product.Service\\Product.Service.csproj
+		SccProjectTopLevelParentUniqueName1 = ContosoPizza.sln
+		SccProjectName1 = Product.Service
+		SccLocalPath1 = Product.Service
+		SccProjectUniqueName2 = ContosoPizzaApp\\ContosoPizzaApp.sfproj
+		SccProjectName2 = ContosoPizzaApp
+		SccLocalPath2 = ContosoPizzaApp
+		SccProjectUniqueName3 = Product.Contracts\\Product.Contracts.csproj
+		SccProjectTopLevelParentUniqueName3 = ContosoPizza.sln
+		SccProjectName3 = Product.Contracts
+		SccLocalPath3 = Product.Contracts
+		SccProjectUniqueName4 = Order.Tests\\Order.Tests.csproj
+		SccProjectTopLevelParentUniqueName4 = ContosoPizza.sln
+		SccProjectName4 = Order.Tests
+		SccLocalPath4 = Order.Tests
+		SccProjectUniqueName5 = Product.Tests\\Product.Tests.csproj
+		SccProjectTopLevelParentUniqueName5 = ContosoPizza.sln
+		SccProjectName5 = Product.Tests
+		SccLocalPath5 = Product.Tests
+		SccProjectUniqueName6 = Web.UI\\Web.UI.xproj
+		SccProjectTopLevelParentUniqueName6 = ContosoPizza.sln
+		SccProjectName6 = Web.UI
+		SccLocalPath6 = Web.UI
+		SccProjectUniqueName7 = Order.Domain\\Order.Domain.csproj
+		SccProjectTopLevelParentUniqueName7 = ContosoPizza.sln
+		SccProjectName7 = Order.Domain
+		SccLocalPath7 = Order.Domain
+		SccProjectUniqueName8 = Order.Infrastructure\\Order.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName8 = ContosoPizza.sln
+		SccProjectName8 = Order.Infrastructure
+		SccLocalPath8 = Order.Infrastructure
+		SccProjectUniqueName9 = Order.Service\\Order.Service.csproj
+		SccProjectTopLevelParentUniqueName9 = ContosoPizza.sln
+		SccProjectName9 = Order.Service
+		SccLocalPath9 = Order.Service
+		SccProjectUniqueName10 = Order.Service.Contracts\\Order.Service.Contracts.csproj
+		SccProjectTopLevelParentUniqueName10 = ContosoPizza.sln
+		SccProjectName10 = Order.Service.Contracts
+		SccLocalPath10 = Order.Service.Contracts
+		SccProjectUniqueName11 = GatewayApi\\GatewayApi.csproj
+		SccProjectTopLevelParentUniqueName11 = ContosoPizza.sln
+		SccProjectName11 = GatewayApi
+		SccLocalPath11 = GatewayApi
+		SccProjectUniqueName12 = Store.Contracts\\Store.Contracts.csproj
+		SccProjectTopLevelParentUniqueName12 = ContosoPizza.sln
+		SccProjectName12 = Store.Contracts
+		SccLocalPath12 = Store.Contracts
+		SccProjectUniqueName13 = StoreService\\StoreService.csproj
+		SccProjectTopLevelParentUniqueName13 = ContosoPizza.sln
+		SccProjectName13 = StoreService
+		SccLocalPath13 = StoreService
+		SccProjectUniqueName14 = Common.Configuration.ServiceFabric\\Common.Configuration.ServiceFabric.csproj
+		SccProjectTopLevelParentUniqueName14 = ContosoPizza.sln
+		SccProjectName14 = Common.Configuration.ServiceFabric
+		SccLocalPath14 = Common.Configuration.ServiceFabric
+		SccProjectUniqueName15 = Common\\Common.csproj
+		SccProjectTopLevelParentUniqueName15 = ContosoPizza.sln
+		SccProjectName15 = Common
+		SccLocalPath15 = Common
+		SccProjectUniqueName16 = Admin.Api\\Admin.Api.csproj
+		SccProjectTopLevelParentUniqueName16 = ContosoPizza.sln
+		SccProjectName16 = Admin.Api
+		SccLocalPath16 = Admin.Api
+	EndGlobalSection
+EndGlobal
