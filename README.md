@@ -11,5 +11,5 @@ Sample code for the 'Exploring Microservices' talk.
 - Execute a POST request to http://localhost:8085/admin/seed/product to upload some product data. No body needed
 - Browse to http://localhost:8080/ to launch the UI
 
-##Architecture
+##Sample Architecture
 ![Contoso Pizza Architecture](https://30store.blob.core.windows.net:443/public/ContosoPizza1.png "Contoso Pizza Architecture")
