@@ -1,5 +1,5 @@
 # Exploring Microservices
-Sample code for the exploring microservices talk.
+Sample code for the 'Exploring Microservices' talk.
 
 To run on a local Service Fabric cluster:
 - Create an Azure storage account
